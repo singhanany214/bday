@@ -187,6 +187,13 @@ button{
 /* POSITIONING */
 .center-msg{position:absolute;top:10px}
 .center-btn{position:absolute;top:120px}
+@media (max-width: 768px) {
+  #cake.show{
+    bottom: 110px;   /* move cake higher on mobile */
+    width: 180px;    /* slightly smaller so it fits */
+  }
+}
+
 </style>
 </head>
 
@@ -331,3 +338,4 @@ document.addEventListener("click",()=>music.play(),{once:true});
 
 </body>
 </html>
+
